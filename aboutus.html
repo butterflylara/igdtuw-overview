@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IGDTUW 3D Map</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #1d3557; 
+            padding: 50px 20px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .about-us {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            color: #333;
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+        }
+
+        .about-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1d3557; /* Dark Blue */
+            border-bottom: 3px solid #1d3557;
+            padding-bottom: 10px;
+        }
+
+        .about-us h3 {
+            font-size: 2rem;
+            margin-top: 30px;
+            color: #1d3557; 
+            font-weight: 600;
+        }
+
+        .about-us p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .about-us ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .about-us ul li {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .about-us ul li a {
+            color: #1d3557;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .about-us ul li a:hover {
+            color: #e63946;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1d3557;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #1d3557;
+            margin-top: 10px;
+        }
+
+        .about-us ul li {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-us ul li a:hover {
+            color: #e63946;
+            transform: scale(1.05);
+        }
+
+        .features-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+        }
+
+        .features-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1d3557;
+            border-bottom: 3px solid #1d3557;
+            padding-bottom: 10px;
+        }
+
+        .features-section .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-card h3 {
+            color: #1d3557;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .about-us {
+                padding: 20px;
+            }
+
+            .about-us h2 {
+                font-size: 2rem;
+            }
+
+            .about-us h3 {
+                font-size: 1.5rem;
+            }
+
+            .about-us ul li {
+                font-size: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .features-section h2 {
+                font-size: 2rem;
+            }
+
+            .footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>About Us - IGDTUW 3D Map</h1>
+    </div>
+
+    <div class="about-us">
+        <h2>Campus Overview</h2>
+        <p>Here’s the Master Plan of Indira Gandhi Delhi Technical University for Women to give you a quick visual overview of the campus layout:</p>
+        <p><strong>IGDTUW Campus Map</strong> A fully interactive and immersive 3D campus map for Indira Gandhi Delhi Technical University for Women (IGDTUW), designed to offer a realistic and detailed virtual tour experience.</p>
+
+        <h3 class="section-title">Technologies Used</h3>
+        <ul>
+            <li><b>Frontend</b> :HTML, CSS, JavaScript</li>
+            <li><b>3D Rendering</b> :Three.js, WebGL</li>
+            <li><b>3D Modeling</b> :Blender</li>
+            <li><b>Animations</b> :GSAP (GreenSock Animation Platform)</li>
+            <li><b>Development Tools</b> :Visual Studio Code, GitHub, npm</li>
+        </ul>
+
+    <div class="features-section">
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Interactive 3D Model</h3>
+                <p>Explore the entire campus in a 3D environment, with easy navigation using mouse or keyboard controls.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-Time Rendering</h3>
+                <p>Real-time rendering allows users to view the campus map with high-quality visuals and smooth transitions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Floor Navigation</h3>
+                <p>Quickly switch between different floors of the campus, making it easy to locate buildings, rooms, and facilities.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Building Details</h3>
+                <p>Click on individual buildings to view detailed information, including department names and office numbers.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Interactive Campus Points</h3>
+                <p>Click on specific areas for pop-up information about amenities, cafeterias, and other important spots on campus.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-World Visuals</h3>
+                <p>High-quality textures and models represent the campus with a high level of accuracy, creating a real-world experience.</p>
+            </div>
+        </div>
+    </div>
+    <h4 class="section-title">CONTRIBUTORS</h4>
+
+        <h3 class="section-title">Team Coding</h3>
+        <p>The Coding team has been instrumental in writing the main code for this project, ensuring a seamless user experience.</p>
+        <ul>
+            <li><a href="https://github.com/Hits-p">HITANSHA-TEAM HEAD</a></li>
+            <li><a href="https://github.com/shnjnmkkr">SHANJAN</a></li>
+            <li><a href="https://github.com/tusharsinghbisht">TUSHAR</a></li>
+            <li><a href="https://github.com/PalakChadha27">PALAK</a></li>
+            <li><a href="https://github.com/AnishaGupta-tech">ANISHA</a></li>
+            <li><a href="https://github.com/chhavibhalla">CHHAVI</a></li>
+            <li><a href="https://github.com/butterflylara">LEHAR</a></li>
+        </ul>
+
+        <h3 class="section-title">Team Blender</h3>
+        <p>The Blender team worked on creating the 3D models that bring this campus map to life.</p>
+        <ul>
+            <li><a href="https://github.com/panshilovesicecream">PRIYANSHI-TEAM HEAD</a></li>
+            <li><a href="https://github.com/nishtha-22">NISHTHA</a></li>
+            <li><a href="https://github.com/aziraxariza">ARIZA</a></li>
+            <li><a href="https://github.com/Antarctica1234">PURVA</a></li>
+            <li><a href="https://github.com/aadhyaavermaa">AADHYA</a></li>
+            <li><a href="https://github.com/Lordvaderani">DIVYANSH</a></li>
+            <li><a href="https://github.com/anushkayadav0901">ANUSHKA</a></li>
+            <li><a href="https://github.com/estrizal">ADITYA</a></li>
+            <li><a href="https://github.com/rakshitatagra">RAKSHITA</a></li>
+        </ul>
+
+        <h3 class="section-title">Team Pictures and Animation</h3>
+        <p>The Pictures and Animation team enhanced the visual appeal of the project through stunning images and smooth animations.</p>
+        <ul>
+            <li><a href="https://github.com/chhavibhalla">CHHAVI-TEAM HEAD</a></li>
+            <li><a href="https://github.com/4563kr">SUNANDITHA</a></li>
+            <li><a href="https://github.com/Antarctica1234">PURVA</a></li>
+            <li><a href="https://github.com/Ayati-G">LEHAR</a></li>
+        </ul>
+
+        <h3 class="section-title">Acknowledgments</h3>
+        <p>This project has been a collaborative effort with contributions from several talented individuals. Special thanks to:</p>
+        <ul>
+            <li>Deepak Gupta - LEAD DEVELOPER & PROJECT CREATOR</li>
+            <li>The Coding team has been instrumental in writing the main code for this project, ensuring a seamless user experience.</li>
+        </ul>
+        
+        <h3 class="section-title">Contact</h3>
+        <p>If you have any queries or would like to collaborate on this project, feel free to reach out:</p>
+        <ul>
+            <li>Deepak Gupta - <a href="mailto:divi2749@gmail.com">divi2749@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 IGDTUW Campus Map Project. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
